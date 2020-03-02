@@ -1,0 +1,123 @@
+.feedback
+	&-title
+		position: relative
+		display: flex
+		justify-content: center
+		background-color: $dark
+		height: 140px
+		&::before
+			content: ''
+			width: 450px
+			height: 3px
+			background-color: #ffffff
+			position: absolute
+			top: calc(60%)
+	&__title
+		+title
+		font-size: 40px
+		text-transform: uppercase
+		color: #ffffff
+		letter-spacing: 2px
+		
+		position: absolute
+		background-color: #373737
+		padding: 48px 25px
+		
+
+
+
+	&-wrap
+		display: flex
+		background-color: $dark2
+
+	&-control
+		font-size: 18px
+		+title
+		color: #cdc8c8
+	
+		
+
+
+
+
+.feedback-control
+	text-align: center
+	&__text
+		display: block
+		max-width: 222px
+		margin: 68px 47px 18px
+	&__line
+		height: 2px
+		width: 62px
+		background-color: #b1aeae
+		margin: auto
+		margin-bottom: 40px
+	&__arrows
+		font-size: 14px
+		margin-bottom: 30px
+	&__arrowL
+		background-color: transparent
+		border: none
+		margin-right: 60px
+		cursor: pointer
+		&:focus
+			outline: none
+		
+	&__arrowR
+		background-color: transparent
+		border: none
+		margin-left: 60px
+		cursor: pointer
+		&:focus
+			outline: none
+		
+
+	&__counter
+		position: relative
+		bottom: 8px
+		
+.feedback-slider
+	display: flex
+	margin-top: 27px
+	&__slide
+		position: relative
+		margin-right: 20px
+	margin-top: 27px
+	&__btn1
+		cursor: pointer
+		position: absolute
+		bottom: 10%
+		left: 5%
+		+title
+		font-size: 10px
+		text-align: center
+		width: 43px
+		height: 33px
+		color: #272727
+		border: none
+		&:focus
+			outline: none
+		&:hover
+			background-color: gray
+			color: #fff
+	&__btn2
+		cursor: pointer
+		position: absolute
+		bottom: 10%
+		right: 5%
+		font-size: 12px
+		+title
+		text-align: center
+		width: 136px
+		height: 33px
+		color: #272727
+		border: none
+		&:focus
+			outline: none
+		&:hover
+			background-color: gray
+			color: #fff
+		span
+			font-size: 10px
+
+
